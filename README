@@ -1,0 +1,41 @@
+# Password Manager CLI – Python
+
+Gestionnaire de mots de passe en ligne de commande développé en Python, utilisant un chiffrement AES-256-GCM et une dérivation de clé PBKDF2-HMAC-SHA256, avec stockage sécurisé en base SQLite.
+
+Projet réalisé dans un cadre académique puis amélioré à des fins d’apprentissage en cybersécurité.
+
+---
+
+## Fonctionnalités
+
+- Création d’utilisateurs
+- Ajout et mise à jour de mots de passe
+- Consultation sécurisée des secrets
+- Stockage chiffré dans une base SQLite locale
+- Interface en ligne de commande
+
+---
+
+## Sécurité (implémentation)
+
+- Chiffrement symétrique AES-256-GCM  
+- Dérivation de clé avec PBKDF2-HMAC-SHA256  
+- Encodage Base64 des données chiffrées  
+- Base de données SQLite  
+
+> ⚠️ Projet éducatif — ne pas utiliser tel quel en production.
+
+---
+
+## Prérequis
+
+- Python 3.10+
+
+---
+
+## Installation
+
+```bash
+python -m venv .venv
+source .venv/bin/activate   # Windows : .venv\Scripts\activate
+pip install -r requirements.txt
